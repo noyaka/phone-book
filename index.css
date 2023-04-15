@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(200, 190, 190);
+    --nav-width: 100px;
+    align-items: center;
+    margin: 0 0 0 var(--nav-width);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.record-container {
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.single-record {
+    color: #908484;
+    padding: 15px;
+    background: #fff;
+    flex: 1 0 320px;
+    width: 500px;
+    display: inline-block;
+    height: 220px;
+}
+
+.record-el-center {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    vertical-align: middle;
+}
+
+.record-el-left {
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    width: 25%;
+    height: 30%;
+    vertical-align: middle;
+}
+
+.add-record-btn {
+    padding-left: 450px;
+    margin: 50px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(117, 195, 221);
+    width: 450px;
+    height: 400px;
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-content {
+    text-align: left;
+}
+
+.close {
+    color: rgb(73, 68, 68);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label.validation-error{
+    color:   rgb(172, 61, 61);
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hide{
+    display:none;
+}
+
+#clear-btn, #submit-btn {
+    border-color: #4CAF50;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#clear-btn:hover, #submit-btn:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+/* enable click on icon inside button */
+button > * {
+    pointer-events: none;
+}
+
+#edit-btn, #delete-btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+    bottom: 0px;
+    float: right;
+}
+
+#userId {
+    display: none;
+}
+
+#fullname {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#address {
+    width: 40%;
+    display: inline-block;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+#icon-btn {
+    display: inline-block;
+    text-align:center;
+    justify-content: center;
+    padding-top: 15px;
+    width: 10%;
+    height: 40%;
+    margin: auto;
+}
+
+#position {
+    width: 30%;
+    text-align: center;
+}
+
+#phonenumber {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}

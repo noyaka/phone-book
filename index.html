@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="record-display" id="record-display">
+    <h1 style="color: rgb(70, 105, 105); text-align: center;">Contacts</h1>    
+        <div class="record-container" id="record-container">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <h2 style="text-align: center; color: #3dae41; padding: 10px;">Add a new contact</h2>
+            
+                <label for = "picture-inp"><b>Upload picture: </b></label>
+                <input type="file" id="picture-inp" accept="image/jpeg, image/png, image/jpg"><br><br>
+
+                <label for = "fullname-inp"><b>Full name: </b></label>
+                <label class="validation-error hide" id="validationError0">This field is required.</label>
+                <label class="validation-error hide" id="validation-error0">This field must contains non numeric characters.</label>
+                <input type="text" id="fullname-inp"><br><br>
+
+                
+                <label for = "position-inp"><b>Position: </b></label>
+                <label class="validation-error hide" id="validationError1">This field is required.</label>
+                <label class="validation-error hide" id="validation-error1">This field must contains non numeric characters.</label>
+                <input type="text" id="position-inp"><br><br>
+
+                <label for = "address-inp"><b>Address: </b></label>
+                <label class="validation-error hide" id="validationError2">This field is required.</label>
+                <button type="button" id="location-btn">Get location</button>
+                <input type="text" id="address-inp"><br><br>
+
+                <label for = "phonenumber-inp"><b>Phone number: </b></label>
+                <label class="validation-error hide" id="validationError3">This field is required.</label>
+                <label class="validation-error hide" id="validation-error3">The phone number must be in a valid format.</label>
+                <input type="text" id="phonenumber-inp"><br><br>
+            </form>
+        </div>
+        <div class = "input-btns">
+            <button id="clear-btn">Clear</button>
+            <button type="submit" id="submit-btn">Add Contact</button>
+        </div>
+    </div>
+
+        <div class="add-record-btn">
+            <button type="button" id="modal-btn" style="font-size: 70px; width: 100px; cursor: pointer; "> + </button>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
